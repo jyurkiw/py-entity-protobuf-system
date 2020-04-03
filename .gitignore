@@ -1,0 +1,9 @@
+.pytest_cache/*
+__pycache__
+
+docs/*
+!docs/conf/
+docs/conf/*
+!docs/conf/Comments.txt
+!docs/conf/Languages.txt
+!docs/conf/Project.txt

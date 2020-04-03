@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+import "ident.proto";
+
+message Location {
+  Ident ident = 1;
+
+  int32 xLoc = 2;
+  int32 yLoc = 3;
+  int32 zLoc = 4;
+}

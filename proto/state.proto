@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+import "ident.proto";
+
+/*Class: State
+The state of an entity.
+*/
+message State {
+  //Property: ident Ident - The identity of this state component.
+  Ident ident = 1;
+
+  //Property: state string - The state of this component.
+  string state = 2;
+}
+
+/*About: State Machine Systems
+An entity used in a state machine must have a State protobuf as a component.
+It can be named anything so long as that name is passed to the State Machine
+as the stateComponentName.
+*/

@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+import "ident.proto";
+
+message Facing {
+  Ident ident = 1;
+
+  float orientation = 2;
+  float magnitude = 3;
+}

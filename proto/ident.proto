@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+/* Class: Ident
+The ident message needed by all components.
+*/
+message Ident {
+  // Property: name string - The component name.
+  string name = 1;
+
+  // Property: version int32 - The version of the component.
+  int32 version = 2;
+}
+
+/*About: Entity Identity
+Any protobuf that is going to be used as a component needs to have an Ident
+sub-protobuf named "ident". It's that simple.
+*/
